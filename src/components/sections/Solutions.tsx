@@ -91,7 +91,7 @@ export function Solutions() {
                       ))}
                     </ul>
                     <div className="mt-8">
-                      <Button href="#contact" onClick={() => chooseInterest(`Solution: ${s.title}`)} size="sm" className="w-full sm:w-auto">
+                      <Button href="#contact" onClick={() => chooseInterest(s.title)} size="sm" className="w-full sm:w-auto">
                         Discuss this solution <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                       </Button>
                     </div>

@@ -77,7 +77,7 @@ export function Contact() {
 
         <Reveal delay={0.1}>
           <form action="https://api.web3forms.com/submit" method="POST" onSubmit={submit} className="glass rounded-3xl p-5 sm:p-8 lg:p-10" noValidate={false} aria-describedby="form-status">
-            <input type="hidden" name="access_key" value="a689b528-e9d6-43c5-9656-65fb9fe3817a" />
+            <input type="hidden" name="access_key" value="2d56403c-ac2c-485c-9f27-a6c0b0860176" />
             <div className="grid gap-5 sm:grid-cols-2">
               <Field id="name" label="Name" required>
                 <input id="name" name="name" required maxLength={120} autoComplete="name" placeholder="Your full name" className={field} />

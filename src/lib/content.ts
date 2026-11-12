@@ -95,7 +95,7 @@ export const products: Product[] = [
     kicker: "Agent observability & evaluation",
     summary:
       "An observability, security and behavioral evaluation platform for autonomous AI agents. It continuously monitors agent behavior, scores goal alignment, analyzes decisions and surfaces deviations, so agents operate as intended.",
-    interest: "Product: VYRONIQ",
+    interest: "VYRONIQ",
     features: [
       { label: "AI agent behavior monitoring", status: "available" },
       { label: "Goal alignment evaluation across 7 axes", status: "available" },
@@ -112,7 +112,7 @@ export const products: Product[] = [
     kicker: "AI-powered HR solution",
     summary:
       "An AI-powered HR solution that applies intelligent automation to people-operations workflows, reducing manual effort for HR teams while keeping people in the loop.",
-    interest: "Product: AI-HRFlow",
+    interest: "AI-HRFlow",
     features: [
       { label: "AI-assisted HR workflow automation" },
       { label: "Designed for human-in-the-loop decisions" },
@@ -125,7 +125,7 @@ export const products: Product[] = [
     kicker: "Document processing",
     summary:
       "A document processing and PDF parsing solution that turns unstructured PDFs into clean, machine-readable content, ready for search, analytics and AI pipelines.",
-    interest: "Product: PDF Parser",
+    interest: "PDF Parser",
     features: [
       { label: "PDF content extraction and parsing" },
       { label: "Structured output for downstream systems" },
@@ -254,7 +254,7 @@ export const techGroups: { title: string; items: Tech[] }[] = [
   {
     title: "Foundation Models",
     items: [
-      { name: "OpenAI", fallback: Sparkles },
+      { name: "OpenAI", image: "/openai.png" },
       { name: "Claude", path: siAnthropic.path },
       { name: "Gemini", path: siGooglegemini.path },
     ],
@@ -262,11 +262,11 @@ export const techGroups: { title: string; items: Tech[] }[] = [
   {
     title: "Agentic Frameworks",
     items: [
-      { name: "LangChain", path: siLangchain.path },
+      { name: "LangChain", image: "/langchain.png" },
       { name: "MCP", path: siModelcontextprotocol.path },
-      { name: "Google ADK", fallback: Boxes },
+      { name: "Google ADK", image: "/google-adk.png" },
       { name: "AWS Bedrock", image: "/aws-bedrock.png" },
-      { name: "Azure AI Foundry", fallback: Factory },
+      { name: "Azure AI Foundry", image: "/azure-ai-foundry.png" },
     ],
   },
   {
@@ -316,9 +316,9 @@ export const processSteps = [
 ];
 
 export const interestOptions = [
-  ...services.map((s) => `Service: ${s.title}`),
-  ...solutions.map((s) => `Solution: ${s.title}`),
-  ...products.map((p) => p.interest),
+  ...services.map((s) => s.title),
+  ...solutions.map((s) => s.title),
+  ...products.map((p) => p.name),
   "Something else",
 ];
 

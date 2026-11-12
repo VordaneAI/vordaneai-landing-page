@@ -31,13 +31,13 @@ export function Technology() {
                         className={`group flex items-center gap-3 rounded-xl border border-white/5 bg-white/[0.03] px-3.5 py-3 transition-colors hover:border-violet/50 hover:bg-violet/10 ${t.wide ? "col-span-2" : ""}`}
                       >
                         {t.image ? (
-                          <div className="relative h-[22px] w-[22px] shrink-0">
+                          <div className="relative h-[22px] w-[22px] shrink-0 flex items-center justify-center">
                             <Image
                               src={t.image}
                               alt={t.name}
                               fill
                               sizes="22px"
-                              className="object-contain"
+                              className="object-contain drop-shadow-[0_0_6px_rgba(99,230,232,0.3)] group-hover:drop-shadow-[0_0_10px_rgba(99,230,232,0.65)] transition-all duration-300"
                             />
                           </div>
                         ) : t.path ? (

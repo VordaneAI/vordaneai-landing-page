@@ -33,7 +33,7 @@ export function Services() {
               <Reveal as="li" key={s.n} delay={(i % 3) * 0.1}>
                 <motion.a
                   href="#contact"
-                  onClick={() => chooseInterest(`Service: ${s.title}`)}
+                  onClick={() => chooseInterest(s.title)}
                   whileHover="hover"
                   initial="rest"
                   animate="rest"
