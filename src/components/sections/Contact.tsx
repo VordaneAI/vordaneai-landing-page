@@ -110,7 +110,7 @@ export function Contact() {
             <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <Button type="submit" disabled={state === "sending"} className="w-full sm:w-auto">
                 {state === "sending" ? <Loader2 size={18} className="animate-spin" /> : <Send size={18} />}
-                {state === "sending" ? "Sending..." : "Send Message"}
+                {state === "sending" ? "Submitting..." : "Submit Form"}
               </Button>
               <div id="form-status" role="status" aria-live="polite" className="min-h-6 text-sm">
                 <AnimatePresence mode="wait">
